@@ -4,14 +4,7 @@ const routes: RouteRecordRaw[] = [
   // 在这里编写路由
   {
     path: "/",
-    props: {
-      msg: "Vite + Vue",
-    },
-    component: () => import("../components/HelloWorld.vue"),
-  },
-  {
-    path: "/login",
-    component: () => import("../Login.vue"),
+    component: () => import("../views/AppHome.vue"),
   },
 ];
 
