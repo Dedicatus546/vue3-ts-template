@@ -11,6 +11,7 @@ const bootstrap = async () => {
 
   const app = createApp(App);
   app.use(pinia).use(router);
+  const a = 1;
 
   app.mount("#app");
 };
