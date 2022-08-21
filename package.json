@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.ts,.vue --fix src"
+    "lint": "eslint --ext .js,.ts,.vue --fix src",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "naive-ui": "^2.32.2",
@@ -30,5 +32,9 @@
     "unplugin-vue-components": "^0.22.4",
     "vite": "^3.0.7",
     "vue-tsc": "^0.39.5"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,vue,tsx,js,jsx}": "eslint --fix",
+    "src/**/*.{css,less,json}": "prettier"
   }
 }
